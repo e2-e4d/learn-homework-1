@@ -15,13 +15,30 @@
 * Посчитать и вывести суммарное количество продаж всех товаров
 * Посчитать и вывести среднее количество продаж всех товаров
 """
+def get_total_sales_for_each_product(sales_stats):
+    
+def get_average_sales_for_each_product(sales_stats):
+    
+def get_total_sales_for_all_products(sales_stats):
+    
+def get_average_sales_for_all_products(sales_stats):
 
+    
 def main():
     """
     Эта функция вызывается автоматически при запуске скрипта в консоли
     В ней надо заменить pass на ваш код
     """
-    pass
+    sales_stats =   [
+    {'product': 'iPhone 12', 'items_sold': [363, 500, 224, 358, 480, 476, 470, 216, 270, 388, 312, 186]}, 
+    {'product': 'Xiaomi Mi11', 'items_sold': [317, 267, 290, 431, 211, 354, 276, 526, 141, 453, 510, 316]},
+    {'product': 'Samsung Galaxy 21', 'items_sold': [343, 390, 238, 437, 214, 494, 441, 518, 212, 288, 272, 247]},
+  ]
+    print('Cуммарное количество продаж для каждого товара: \n', get_total_sales_for_each_product(sales_stats))
+    print('Cреднее количество продаж для каждого товара: \n', get_average_sales_for_each_product(sales_stats))
+    print('Cуммарное количество продаж всех товаров: \n', get_total_sales_for_all_products(sales_stats))
+    print('Cреднее количество продаж всех товаров: \n', get_average_sales_for_all_products(sales_stats))
+
     
 if __name__ == "__main__":
     main()
