@@ -13,13 +13,27 @@
 * Вывести содержимое переменной на экран
 
 """
+def get_recommended_activity(age):
+    if age < 7:
+        activity = 'Кайфуй в детском саду'
+    elif age >=7 and age < 18:
+        activity = 'Кайфуй в школе' 
+    elif age >=18 and age < 23:
+        activity = 'Учись, студент'    
+    else:
+        activity = 'Ержан, вставай — на работу пора!'
+    return activity
 
 def main():
     """
     Эта функция вызывается автоматически при запуске скрипта в консоли
     В ней надо заменить pass на ваш код
     """
-    pass
+    age = int(input('Введите ваш возраст: '))
+    
+    activity = get_recommended_activity(age)
+
+    print(activity)
 
 if __name__ == "__main__":
     main()
