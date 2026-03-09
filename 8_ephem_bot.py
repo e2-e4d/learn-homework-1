@@ -79,8 +79,8 @@ def planet_in_constellation(update, context):
         update.message.reply_text(f'Перечень планет: Mars, Venus, Jupiter, Saturn, Mercury, Uranus, Neptune')
         
 def main():
-    # mybot = Updater("8784351488:AAGIW4Oe1mCM_dYiVUAZgk_e55-teEeJd9M", request_kwargs=PROXY, use_context=True)
-    mybot = Updater("8784351488:AAGIW4Oe1mCM_dYiVUAZgk_e55-teEeJd9M", use_context=True)
+    # mybot = Updater("", request_kwargs=PROXY, use_context=True)
+    mybot = Updater("", use_context=True)
 
     dp = mybot.dispatcher
     dp.add_handler(CommandHandler("start", greet_user))
